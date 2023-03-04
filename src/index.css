@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Kavoon";
+  src: local("Kavoon"), url(./utils/fonts/Kavoon-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "MPLUS1p";
+  src: local("MPLUS1p"),
+    url(./utils/fonts/MPLUS1p-Regular.ttf) format("truetype");
+}
+
+@layer components {
+  .btn-bordered {
+    border-width: 2px;
+    white-space: nowrap;
+    font-weight: 700;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
+
+@layer components {
+  .responsive-text_btn {
+    @apply lg:text-xl md:text-lg sm:text-base xs:text-sm;
+  }
+  .responsive-w_btn {
+    @apply lg:w-28 md:w-24 sm:w-20 xs:w-16;
+  }
+}

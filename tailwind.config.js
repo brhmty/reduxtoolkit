@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -12,6 +14,10 @@ module.exports = {
         clr_grey_10: "#f1f5f8",
         clr_red_dark: "hsl(360, 67%, 44%)",
         clr_red_light: "hsl(360, 71%, 66%)",
+      },
+      fontFamily: {
+        kavoon: ['"Kavoon"'],
+        sans: ["MPLUS1p", ...defaultTheme.fontFamily.sans],
       },
       screens: {
         xs: "320px",
