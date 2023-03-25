@@ -26,7 +26,7 @@ function App() {
   //to cart amount
   useEffect(() => {
     dispatch(calculateTotalPrice());
-  }, [cartItems]);
+  }, [cartItems, dispatch]);
 
   //to scrolling top and showing/hiding modal
   useEffect(() => {
